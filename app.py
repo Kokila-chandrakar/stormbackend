@@ -4,6 +4,10 @@ import os
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return "Storm Backend Running 🚀"
+
 @app.route("/run-model")
 def run_model():
     try:
